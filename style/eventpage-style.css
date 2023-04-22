@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+  
+  body {
+    min-height: 200vh;
+  }
+
+
+  #event-rundown {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  #event-rundown h1 {
+    font-size: 50px;
+    font-weight: bolder;
+  }
+
+  .card {
+    width: 1000px;
+    height: 250px;
+   
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .card-container .day {
+    font-weight: bolder;
+    font-size: 25px;
+  }
+
+  /* Size Mobile */
+  @media screen and (min-width: 400px) and (max-width: 767px) {
+    .card {
+      width: 450px;
+      height: 380px;
+     
+    }
+  }

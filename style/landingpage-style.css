@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+  
+   body {
+    
+    background-image: url("/img/fest.jpg");
+    height: 10vh;
+    background-size: cover;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+ }
+
+
+ .landing-page {
+    text-align: center;
+    margin-top: 20.5rem;
+    margin-bottom: 500px;
+    
+ }
+
+ .landing-page h2 {
+    font-size: 60px;
+    font-weight: bolder;
+ }
+
+ .landing-page p {
+    font-size: 25px;
+ }
+
+ #event-desc {
+    background-color: white;
+    color: black;
+    height: 600px;
+    padding: 8.5rem 10.5rem;
+    display: flex;
+    align-items: center;
+ }
+
+ #event-desc h3 {
+    font-size: 55px;
+    font-weight: bolder;
+   
+ }
+
+ #left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0rem;
+
+ }
+
+ #left-side p {
+    width: 90%;
+    text-align: justify;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+
+ }
+
+
+
+
+
+ .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    width: 100%;
+ }
+
+ .content img {
+    width: 450px;
+    height: 280px;
+
+ }
+
+ footer {
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: grey;
+ 
+}
+
+footer h1 {
+    font-size: 35px;
+    padding-top: 2.5rem;
+    padding-bottom: 15px;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+
+/* Size Mobile */
+@media screen and (min-width: 400px) and (max-width: 767px) {
+   #event-desc {
+      padding: 0;
+      height: 120vh;
+      text-align: center;
+     
+   }
+
+   #event-desc .container {
+      display: block;
+   }
+
+   #left-side {
+      text-align: center;
+   }
+
+
+   #left-side p {
+      width: 100%;
+      margin-bottom: 50px;
+   }
+
+   .content img { 
+      width: 400px;
+      height: 280px;
+  
+   }
+
+
+   footer p {
+      word-wrap: break-word;
+   }
+
+
+
+
+
+
+}
+
+
+/* Size Tablet */
+@media screen and (min-width: 768px) and (max-width: 1435px) {
+   #event-desc {
+      padding: 0;
+      height: 100vh;
+      text-align: center;
+   }
+
+
+   #event-desc .container {
+      display: block;
+      gap: 120px;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
