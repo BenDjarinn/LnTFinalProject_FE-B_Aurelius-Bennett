@@ -9,7 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -69,5 +70,157 @@
             </div>
        </div>
     </div>
+
+    <div id="our-speaker">
+        <div class="container">
+            <div class="row my-5">
+               <h1 class="text-center fw-bolder" style="font-size: 50px;">FEATURED SPEAKERS</h1>
+               <p class="fw-light w-95 text-center" style="font-size: 20px;">We bring our great speakers from prior Puddingfest</p>
+            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/speaker2.jpg" class="d-block w-100 h-25" alt="...">
+                    <div class="card-body pb-5 pt-3 bg-dark" style="text-align: center;">
+                        <h5 class="card-title text-light fw-bold">Winston Kennedy</h5>
+                        <p class="card-text text-light fw-bolder">CEO of Telnet</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/speaker1.jpg" class="d-block w-100" alt="...">
+                    <div class="card-body pb-5 pt-3 bg-dark" style="text-align: center;">
+                        <h5 class="card-title text-light fw-bold">Albert Chan</h5>
+                        <p class="card-text text-light fw-bolder">Founder & CEO of Testla</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/speaker3.jpg" class="d-block w-100" alt="...">
+                    <div class="card-body pb-5 pt-3 bg-dark" style="text-align: center;">
+                        <h5 class="card-title text-light fw-bold">Hannah Yang</h5>
+                        <p class="card-text text-light fw-bolder">Co-founder of BlackBox</p>
+                    </div> 
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
+        </div>
+    </div>
+
+    <div id="event-timeline">
+      <div class="container">
+        <h1 class="text-center fw-bolder" style="font-size: 50px;">Event Timeline</h1>
+        <div id="timeline">
+          <ul style="text-align: center;">
+            <li>
+              <div>
+                <h1 class="fw-bolder fs-1">May 23, 7.00-9.00 A.M</h1>
+                <p class="fs-3">Internet of Things (IoT) - "Revolutionizing Connectivity: Exploring the World of IoT"</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h1 class="fw-bolder fs-1">May 23, 12.30-2.30 P.M</h1>
+                <p class="fs-3">Quantum Computing - "The Quantum Leap: Unlocking the Power of Quantum Computing"</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h1 class="fw-bolder fs-1">May 24, 9.30-11.30 A.M</h1>
+                <p class="fs-3">Virtual Reality (VR) and Augmented Reality (AR) - "Beyond Reality: The Future of VR and AR Technology"</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h1 class="fw-bolder fs-1">May 24, 2.30-4.30 P.M</h1>
+                <p class="fs-3">Robotics - "From Sci-Fi to Reality: Exploring the Advancements in Robotics Technology"</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h1 class="fw-bolder fs-1">May 25, 12.30-3.00 P.M</h1>
+                <p class="fs-3">Artificial Intelligence (AI) - "AI: From Science Fiction to Reality"</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="register-form">
+      <div class="container">
+        <h1 class="text-center fw-bolder" style="font-size: 50px;">Register Here</h1>
+        <p class="fs-3 mt-2 text-center">Claim your seat now!</p>
+
+        <form action="#" name="myForm" id="form">
+          <div class="register-box">
+              <div class="input-user">
+                  <label for="name" class="required">Name</label>
+                  <input type="text" name="name" id="fullName">
+              </div>
+  
+              <div class="input-user">
+                  <label for="email" class="required">E-mail</label>
+                  <input type="email" name="email" id="email">
+              </div>
+  
+              <div class="input-user">
+                  <label for="tel" class="required">Phone Number</label>
+                  <input type="tel" name="phoneno" id="phoneno">
+              </div>
+
+
+              <div class="input-user">
+                <label for="message" class="required">Session that will be join</label>
+                <select name="events" name="eventchoice" id="events" required>
+                  <option value="event1">Internet of Things (IoT) - "Revolutionizing Connectivity: Exploring the World of IoT"</option>
+                  <option value="event2">Quantum Computing - "The Quantum Leap: Unlocking the Power of Quantum Computing"</option>
+                  <option value="event3">Virtual Reality (VR) and Augmented Reality (AR) - "Beyond Reality: The Future of VR and AR Technology"</option>
+                  <option value="event4">Robotics - "From Sci-Fi to Reality: Exploring the Advancements in Robotics Technology"</option>
+                  <option value="event5">Artificial Intelligence (AI) - "AI: From Science Fiction to Reality"</option>
+                </select>
+              </div>
+  
+  
+  
+            <input type="submit" value="Submit">
+          </div>
+  
+          
+  
+  
+      </form>
+      </div>
+    </div>
+
+
+     <footer class="bg-dark">
+        <h1 class="fw-bold">PuddingFest</h1>
+        <p class="cr">
+            Copyright &#169 2023 PuddingFest, All rights reserved.
+
+        </p>
+    </footer>
+
+
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    
 </body>
 </html>

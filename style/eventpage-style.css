@@ -51,11 +51,233 @@
     font-size: 25px;
   }
 
+  .carousel {
+    width: 650px;
+    
+  }
+
+  
+
+  #our-speaker .container{
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+  #event-timeline .container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  
+#timeline ul{
+  width: 800px;
+  height:auto;
+  margin: 50px auto;
+  border:0px solid #111;
+  padding:10px;
+  position:relative;
+  list-style:none;
+}
+#timeline ul li{
+  padding-bottom:50px;
+}
+#timeline ul:before{
+  content:"";
+  position:absolute;
+  width:5px;
+  background:#aaa69d;
+  height:95%;
+  left:0px;
+  top:0;
+}
+#timeline ul li:before{
+  position:absolute;
+  content:'';
+  width:20px;
+  height:20px;
+  background:#000000;
+  left:-8px;
+  margin-top:20px;
+  border-radius:50%;
+}
+#timeline ul li div{
+  padding:20px;
+  padding-bottom:20px;
+  margin-left:30px;
+  position:relative;
+  background:#d1ccc0;
+  box-shadow:0px 15px 15px -10px #d1ccc0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#timeline ul li div h1{
+  margin-bottom:20px
+}
+#timeline ul li div:before{
+  content:'';
+  position:absolute;
+  left:-30px;
+  top:15px;
+  border-top:15px solid transparent;
+  border-right:15px solid #d1ccc0; 
+  border-bottom:15px solid transparent;
+  border-left:15px solid transparent;
+}
+
+
+
+#register-form .container {
+  padding: 2.5rem 0;
+  padding-bottom: 7.5rem;
+}
+
+
+
+.register-box {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+
+.input-user {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+
+.input-user input {
+  width: 650px;
+  height: 50px;
+  border: 1px solid #3f3f3f;
+  padding: 1.5rem 0.8rem;
+  font-size: 15px;
+}
+
+.input-user select {
+  width: 650px;
+  height: 50px;
+  border: 1px solid #3f3f3f;
+  padding: 0rem 0.6rem;
+  font-size: 15px;  
+
+}
+
+
+
+.register-box input[type="submit"]{
+  font-size: 20px;
+  width: 650px;
+  height: 50px;
+  padding: 5px 0;
+  border: 1px solid #c0c0c0;
+  background-color: black;
+  font-weight: bolder;
+  color: white;
+}
+
+.register-box #form button:hover{
+  background-color: #313131;
+}
+
+label.error {
+  font-weight: 700;
+  display: block;
+  color: #f00;
+  font-size: 20px;
+}
+
+
+footer {
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: grey;
+  color: white;
+
+}
+
+footer h1 {
+  font-size: 35px;
+  padding-top: 2.5rem;
+  padding-bottom: 15px;
+}
+
+footer p {
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+ 
+
+
+  
+
+
+
   /* Size Mobile */
   @media screen and (min-width: 400px) and (max-width: 767px) {
     .card {
-      width: 450px;
-      height: 380px;
-     
+      width: 400px;
+      height: 450px;
     }
+
+
+    .carousel {
+      width: 450px;
+      
+    }
+
+    #timeline ul {
+      width: 400px;
+    }
+
+    #timeline ul li div {
+      display: block;
+    }
+
+    .register-box input, .register-box input[type="submit"], .register-box select, .register-box option {
+      width: 450px;
+    }
+
   }
+
+  
+
+
+@media screen and (min-width: 768px) and (max-width: 1435px) {
+  .card {
+    width: 750px;
+    height: 300px;
+  }
+
+
+  #timeline ul {
+    width: 700px;
+  }
+}
