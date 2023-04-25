@@ -76,14 +76,28 @@ document.getElementById('form').addEventListener('submit', submitForm);
 function submitForm(e) {
     e.preventDefault();
 
-    let name = getElementVal('fullName');
-    let email = getElementVal('email');
-    let phoneNumber = getElementVal('phoneno');
+    var names = getElementVal('fullName');
+    var email = getElementVal('email');
+    var phoneNumber = getElementVal('phoneno');
 
-    let select = document.getElementById('events');
-    let event = select.options[select.selectedIndex].text;
+    var select = document.getElementById('events');
+    var events = select.options[select.selectedIndex].text;
 
-    console.log(name,email,phoneNumber,event);
+
+    saveMessages(names,email,phoneNumber,events);
+
+}
+
+
+let saveMessages = (names, email, phoneNumber, events) => {
+    var newContactForm = contactFormDB.push();
+
+    newContactForm.set({
+        names : names,
+        email : email,
+        phoneNumber : phoneNumber,
+        events : events
+    })
 }
 
 const getElementVal = (id) => {
